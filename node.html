@@ -19,8 +19,48 @@
 
 
     <!-- this is a comment node -->
-    <p>This is also an Element Node</p>
+    <p class="one">This is also an Element Node</p>
 
+
+    <p class="two">This is also an Element Node</p>
+
+
+
+    <script>
+        // let newElement = document.createElement('p');
+        // let body = document.querySelector('body');
+
+        // newElement.textContent = 'this is newly created document'
+
+
+        // body.appendChild(newElement)
+
+        // //  using the method after
+
+
+        // let getH1 = document.querySelector('h1');
+        // let newText = document.createElement('h1');
+        // newText.textContent = "hello shawn you will be a software engineer";
+
+        // body.insertBefore(newText, getH1);
+
+
+        let b = document.querySelector('body');
+
+        let one = document.querySelector('.one')
+
+        let two = document.querySelector('.two')
+
+        let h1 = document.createElement('h1');
+
+        h1.textContent = ' you are extremely talented and good '
+
+        let nextElement = one.nextSibling;
+
+
+        b.insertBefore(h1, two);
+
+    </script>
 </body>
 
 </html>
